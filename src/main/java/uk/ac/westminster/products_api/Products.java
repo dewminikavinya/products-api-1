@@ -3,6 +3,11 @@ package uk.ac.westminster.products_api;
 public class Products {
     private Long id;
     private String name;
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
     private double price;
 
     public Products(Long id, String name, double price) {
