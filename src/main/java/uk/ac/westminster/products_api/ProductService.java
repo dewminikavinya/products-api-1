@@ -9,6 +9,13 @@ import java.util.Optional;
 public class ProductService {
     private List<Products> products = new ArrayList<>();
     private Long nextId = 1L;
+
+    public ProductService() {
+        products.add(new DigitalProduct(1L, "Pro eBook", 19.99, "https://example.com/downloads/pro-ebook.pdf", 8.5));
+        products.add(new PhysicalProduct(2L, "Desk Lamp", 49.99, 1.2, "22x12x10 cm"));
+        nextId = 3L;
+    }
+
     public List<Products> getAllProducts() {
         return products;
     }

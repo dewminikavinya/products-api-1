@@ -4,6 +4,10 @@ public class Products {
     private Long id;
     private String name;
 
+    public Products() {
+
+    }
+
     public void setId(Long id) {
         this.id = id;
     }
